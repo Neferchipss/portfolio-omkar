@@ -358,6 +358,31 @@ section{ position: relative; }
 .gallery button.wide{ grid-column: span 4; }
 .gallery button.wide img{ aspect-ratio: 16 / 8; }
 
+.gallery button.plan, .filmstrip button.plan{
+  position: relative;
+  background: #fdfcf9;
+  border: 1px solid var(--line);
+}
+.gallery button.plan img, .filmstrip button.plan img{
+  object-fit: contain;
+  background: #fdfcf9;
+  padding: 6%;
+}
+.plan-tag{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: .02em;
+  color: var(--ink);
+  background: rgba(253,252,249,.9);
+  border: 1px solid var(--line);
+  padding: 4px 9px;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
 /* ---------- Secondary grid ---------- */
 
 .more-work{
